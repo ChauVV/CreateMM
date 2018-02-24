@@ -1,0 +1,33 @@
+{
+  "plugins": [
+    ["import", {
+      "libraryName": "antd",
+      "libraryDirectory": "es",   // default: lib
+      "style": "css"
+    }],
+    ["babel-plugin-root-import", [{
+      "rootPathPrefix": "@", 
+      "rootPathSuffix": "./src/App/Utils"
+    }, {
+      "rootPathPrefix": "~",
+      "rootPathSuffix": "./src/App/Frontend"
+    }, {
+      "rootPathPrefix": "#",
+      "rootPathSuffix": "./src/App/Backend"
+    }, {
+      "rootPathPrefix": "*",
+      "rootPathSuffix": "./src/App/Assets"
+    }
+    ]]
+  ],
+  "env": {
+    "production": {
+      "presets": ["react"],
+      "plugins": ["transform-class-properties", "transform-object-rest-spread", "transform-remove-console"]
+    },
+    "development": {
+      "presets": ["react"],
+      "plugins": ["react-hot-loader/babel", "transform-class-properties", "transform-object-rest-spread"]
+    }
+  }
+}

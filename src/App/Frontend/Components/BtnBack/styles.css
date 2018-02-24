@@ -1,0 +1,32 @@
+.btn-Back {
+  z-index: 100;
+  position: absolute;
+  background-color: transparent;
+  background-image: var(--background-image-transparent);
+  border-color: transparent;
+  color: var(--text-color-primary);
+  padding: 20px;
+  align-content: center;
+  display: flex;
+  margin-top: 8px;
+  margin-left: 18px;
+
+  font-family: var(--font-roboto);
+  font-size: 14px;
+
+  transition-property: transform;
+  transition-duration: .6s;
+}
+.btn-Back:hover {
+  opacity: 0.8;
+}
+.btn-Back:active {
+  background-color: transparent;
+  opacity: 0.5;
+  transform: scale(.97);
+}
+.img-back {
+  margin-right: 10px;
+  justify-content: center;
+  align-self: center;
+}

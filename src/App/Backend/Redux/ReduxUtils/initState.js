@@ -1,0 +1,71 @@
+
+var initState = {
+  // Global Reducers
+  PINInit: '',
+  currencyInit: 'USD',
+  cardInit: [],
+  tokenInit: [],
+  accountInit: [],
+  // Main Reducers
+  internetInit: true,
+  qrCodeInit: '',
+  accountModalInit: '',
+  accountInfoInit: '',
+  tokenTopInit: [],
+  tokenBottomInit: [],
+  messageInit: '',
+  accountHistoryInit: [],
+  tokenHistoryInit: [],
+  sendingValueInit: [],
+  sendingTokenInit: [],
+  languageInit: 'en',
+  isPassPhraseInit: false,
+  pushNotificationInit: '',
+  sendingStatusInit: [],
+  selectedCardIndexInit: '',
+  oldWebsocketInit: null,
+  oldTimerSocketInit: null,
+  // Saga variable init
+  totalBalanceInit: { isLoadingTotalBalance: false,
+    firstCrypto: '.',
+    decimalCrypto: '..',
+    firstFiat: '.',
+    decimalFiat: '..' },
+  totalBalanceLoadingInit: { isLoadingTotalBalance: true,
+    firstCrypto: '.',
+    decimalCrypto: '..',
+    firstFiat: '.',
+    decimalFiat: '..' },
+  arrCardBalanceInit: [{ isLoadingCardBalance: false,
+    firstCrypto: '.',
+    decimalCrypto: '..',
+    firstFiat: '.',
+    decimalFiat: '..',
+    fiatConvert: '...',
+    cardIndex: 0,
+    pageIndex: 0,
+    arrTokenItem: undefined }],
+  arrCardBalanceLoadingInit: [{ isLoadingCardBalance: true,
+    firstCrypto: '.',
+    decimalCrypto: '..',
+    firstFiat: '.',
+    decimalFiat: '..',
+    fiatConvert: '...',
+    cardIndex: 0,
+    pageIndex: 0,
+    arrTokenItem: undefined }],
+  arrHistoryTxsInit: [{
+    isLoadingHistory: false,
+    arrHistoryTxs: []
+  }],
+  arrHistoryTxsLoadingInit: [{
+    isLoadingHistory: true,
+    arrHistoryTxs: []
+  }],
+  arrSendProcessInit: [],
+  arrSendProcessLoadingInit: [],
+  arrTokenData: [],
+  isResetView: false
+}
+
+export default initState

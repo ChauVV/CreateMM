@@ -1,0 +1,40 @@
+import keyMirror from 'key-mirror'
+
+export default keyMirror({
+  SET_CARD: null,
+  SET_TOKEN: null,
+  SET_ACCOUNT: null,
+  SET_PINCODE: null,
+  SET_CURRENCY: null,
+  SET_INTERNET: null,
+  SET_QRCODE: null,
+  SET_ACCOUNT_MODAL: null,
+  SET_TOKEN_TOP: null,
+  SET_TOKEN_BOTTOM: null,
+  SET_ALERT_MESSAGE: null,
+  SET_ACCOUNT_INFO: null,
+  SET_ACCOUNT_HISTORY: null,
+  SET_TOKEN_HISTORY: null,
+  SET_SENDING_VALUE: null,
+  SET_LANGUAGE: null,
+  SET_PASSPHARSE: null,
+  SET_PUSH_NOTIFICATION: null,
+  SET_SENDING_TOKEN: null,
+  SET_SENDING_STATUS: null,
+  SET_SELECTED_CARD_INDEX: null,
+  SET_WEB_SOCKET: null,
+  SET_TIMER_SOCKET: null,
+  // Saga Actions
+  GET_TOTAL_BALANCE: null,
+  SET_SAGA_TOTAL_BALANCE: null,
+  GET_CARD_BALANCE: null,
+  SET_SAGA_CARD_BALANCE: null,
+  GET_SEND_PROCESS: null,
+  SET_SAGA_SEND_PROCESS: null,
+  SET_RESET_VIEW: null,
+  GET_SAGA_TOKEN_DATA: null,
+  SET_SAGA_TOKEN_DATA: null,
+  GET_HISTORY_TXS: null,
+  SET_SAGA_HISTORY_TXS: null
+
+})
